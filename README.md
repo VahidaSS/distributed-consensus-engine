@@ -166,6 +166,19 @@ Expected behavior:
 
 ---
 
+
+## Architecture Diagram
+
+![Architecture Diagram](Architecture Diagram.png)
+
+## Screenshots
+
+- Docker deployment
+- Leader node output
+- Ledger output
+- Client transactions
+- Adversary node
+
 ## Conclusion
 
 This project demonstrates the implementation of distributed consensus mechanisms using Paxos and PBFT. The system maintains consistency and fault tolerance under both crash and Byzantine failure scenarios while supporting containerized deployment and chaos testing.

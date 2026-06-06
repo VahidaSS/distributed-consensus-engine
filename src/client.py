@@ -4,7 +4,7 @@ import os
 
 leader = os.getenv(
     "LEADER_URL",
-    "http://localhost:5000"
+    "http://node1:5000"
 )
 
 counter = 1
