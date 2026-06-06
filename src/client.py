@@ -1,7 +1,11 @@
 import requests
 import time
+import os
 
-leader = "http://node1:5000"
+leader = os.getenv(
+    "LEADER_URL",
+    "http://localhost:5000"
+)
 
 counter = 1
 

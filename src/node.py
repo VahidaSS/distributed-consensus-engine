@@ -60,6 +60,8 @@ def accept():
     txn = request.json["txn"]
 
     ledger.append(txn)
+    with open("ledger.log", "a") as f:
+        f.write(txn + "\n")
 
     print(f"Node {NODE_ID} ACCEPTED {txn}")
 
@@ -93,6 +95,8 @@ def commit():
     txn = request.json["txn"]
 
     ledger.append(txn)
+    with open("ledger.log", "a") as f:
+        f.write(txn + "\n")
 
     print(f"Node {NODE_ID} COMMIT {txn}")
 
@@ -108,6 +112,8 @@ def transaction():
     txn = request.json["txn"]
 
     ledger.append(txn)
+    with open("ledger.log", "a") as f:
+        f.write(txn + "\n")
 
     return {"status": "committed"}
 
